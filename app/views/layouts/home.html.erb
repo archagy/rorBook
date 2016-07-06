@@ -5,6 +5,12 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <style type="text/css">
+		.test{
+			width:50%;
+		}
+  </style>
 </head>
 <body>
 <ul>
@@ -16,7 +22,7 @@
 </ul>
 <%= yield %>
 
-<%= button_to "Enviar", :controller=>:home, :action=>:servicios, :id=>"20" %>
+<%= button_to "Enviar",{:controller=>:home, :action=>:servicios, :id=>"20"}, :class=>"test" %>
 
 
 </body>
