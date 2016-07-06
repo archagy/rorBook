@@ -17,9 +17,9 @@ class HomeController < ApplicationController
   end
   def servicios
     if request.get?
-      @titulo = "Curso Rails - Servicios - Get"      
+      @titulo = "Curso Rails - Servicios - Get"
     else
-      @titulo = "Curso Rails - Servicios - Post"  
+      @titulo = "Curso Rails - Servicios - Post - #{params[:id]}"
     end
   end
 end

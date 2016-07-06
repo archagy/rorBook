@@ -2593,3 +2593,29 @@ Processing by HomeController#servicios as HTML
   Parameters: {"authenticity_token"=>"+fgUVRUVc6P562hhiPTViBh+m+poQ4Wk7C+LD4LO1JiIrBgAvlMaRPM+GkgdgOhzcwl/zbM5yeBjPZ0nsC1VlQ=="}
   Rendered home/servicios.html.erb within layouts/home (0.4ms)
 Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/servicios" for 127.0.0.1 at 2016-07-06 12:15:00 -0500
+Processing by HomeController#servicios as HTML
+  Parameters: {"authenticity_token"=>"y0p0bgtk4wIb1NWbLHp6D6znCwLPu0T9fbnHMxFvM3K6Hng7oCKK5REBp7K5Dkf0x5DvJRTBCLnyq9EbI4yyfw=="}
+  Rendered home/servicios.html.erb within layouts/home (0.1ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/servicios" for 127.0.0.1 at 2016-07-06 12:15:07 -0500
+Processing by HomeController#servicios as HTML
+  Rendered home/servicios.html.erb within layouts/home (0.1ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2016-07-06 12:15:09 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/home (0.7ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/servicios?id=20" for 127.0.0.1 at 2016-07-06 12:15:11 -0500
+Processing by HomeController#servicios as HTML
+  Parameters: {"authenticity_token"=>"57kp7o6LhgIbe/yq4CJRR4cYNEBdFgdrzchTrQ1c9eWW7SW7Jc3v5RGujoN1Vmy87G/QZ4ZsSy9C2kWFP7906A==", "id"=>"20"}
+  Rendered home/servicios.html.erb within layouts/home (0.1ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
