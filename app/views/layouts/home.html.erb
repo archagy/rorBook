@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> <%= @titulo %></title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<ul>
+	<li> <%= link_to_unless_current "Inicio", :action=>:index %></li>
+	<li> <%= link_to_unless_current "Quienes Somos", :action=>:quienes_somos %></li>
+	<li> <%= link_to_unless_current "Contacto", :action=>:contacto %></li>
+	<li> <%= link_to_unless_current "Localizacion", :action=>:localizacion %></li>
+	<li> <%= link_to_unless_current "Servicios", :action=>:servicios %></li>
+</ul>
+<%= yield %>
+
+<%= button_to "Enviar", :controller=>:home, :action=>:servicios %>
+
+
+</body>
+</html>
